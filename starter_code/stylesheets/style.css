@@ -8,3 +8,91 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+/* Cabecera */
+
+body {
+    background-color: #540B51;
+}
+#nav-bar {
+    display: flex;
+}
+
+#logo{
+   width: 25%; 
+   padding: 15px 0 0 10px;
+}
+
+#search-button {
+    display: flex;
+    gap: 15px;
+} 
+#search-button button {
+    background-color: #540B51;
+    border: none;
+    padding: 15px 10px 0 0;
+}
+
+/* Header  */
+
+#header-container {
+    text-align: center;
+}
+
+#header-container h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+#header-container p span {
+    color: #ECB12F;
+}
+
+#header-container p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+#sign-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding: 0 5px;
+}
+
+#sign-buttons button {
+    height: 53px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    align-items: center;
+}
+
+#sign-button-email  {
+    
+    color: #540B51;
+}
+
+#sign-button-google {
+    display: flex;
+    background-color: #4285F4;
+}
+
+#sign-button-google img {
+    display: flex;
+    height: 1.8rem;
+    background-color: white;
+    padding: 8px;
+    margin-top: 3px;
+}
+#sign-button-google span {
+    flex-grow: 1;
+
+}
+
+#hero-product-img {
+    width: 150%;
+    
+}
