@@ -13,6 +13,7 @@ footer links grey: #454245
 
 body {
     background-color: #540B51;
+    max-width: 768px;
 }
 #nav-bar {
     display: flex;
@@ -91,8 +92,34 @@ body {
     flex-grow: 1;
 
 }
+#hero-product-container {
+
+}
 
 #hero-product-img {
     width: 150%;
-    
+}
+
+/* Seccion 1*/
+
+#section-1 {
+    background-color: #F3EAE2;
+    padding: 0;
+}
+
+#section-1 p {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding-top: 40px;
+}
+
+#company-logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:2fr 1fr 1fr 1fr ;
+}
+#company-logos img {
+    /* width: 15%; */
 }
