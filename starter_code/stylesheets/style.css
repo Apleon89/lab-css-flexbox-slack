@@ -13,113 +13,166 @@ footer links grey: #454245
 
 body {
     background-color: #540B51;
-    max-width: 768px;
+    /* max-width: 768px; */
+    margin: 0;
 }
-#nav-bar {
-    display: flex;
+img {
+    max-width: 100%;
 }
-
-#logo{
-   width: 25%; 
-   padding: 15px 0 0 10px;
-}
-
-#search-button {
-    display: flex;
-    gap: 15px;
-} 
-#search-button button {
-    background-color: #540B51;
-    border: none;
-    padding: 15px 10px 0 0;
+a {
+    text-decoration: none;
 }
 
-/* Header  */
+@media (max-width: 768px) {
 
-#header-container {
-    text-align: center;
-}
+    #nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-#header-container h1 {
-    color: white;
-    font-size: 2.5rem;
-}
+    #logo-container {
+        display: flex;
+        flex-grow: 1;
+    }
 
-#header-container p span {
-    color: #ECB12F;
-}
+    #logo-container ul {
+        
+        height: 1px;
+        width: 1px;
+        list-style: none;
+    }
 
-#header-container p {
-    color: white;
-    font-size: 1.2rem;
-}
+    #logo-container ul li a {
+        text-decoration: none;
+        font-size: 1px;
+        color: #540B51;
+    }
 
-#sign-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-    padding: 0 5px;
-}
-
-#sign-buttons button {
-    height: 53px;
-    border: none;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    align-items: center;
-}
-
-#sign-button-email  {
+    #logo{
+    width: 35%; 
+    padding: 30px 0 0 30px;
+    }
     
-    color: #540B51;
-}
 
-#sign-button-google {
-    display: flex;
-    background-color: #4285F4;
-}
+    #search-button {
+        display: flex;
+        gap: 20px;
+        padding: 35px 20px 0 0;
+    } 
+    #search-button button {
+        background-color: #540B51;
+        width: 35px;
+        border: none;
+    }
 
-#sign-button-google img {
-    display: flex;
-    height: 1.8rem;
-    background-color: white;
-    padding: 8px;
-    margin-top: 3px;
-}
-#sign-button-google span {
-    flex-grow: 1;
+    /* Header  */
 
-}
-#hero-product-container {
+    #header-container {
+        text-align: center;
+        
+    }
 
-}
+    #header-container h1 {
+        color: white;
+        font-size: 2.6rem;
+    }
 
-#hero-product-img {
-    width: 150%;
-}
+    #header-container p span {
+        color: #ECB12F;
+    }
 
-/* Seccion 1*/
+    #header-container p {
+        color: white;
+        font-size: 1.2rem;
+    }
 
-#section-1 {
-    background-color: #F3EAE2;
-    padding: 0;
-}
+    #sign-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        padding: 0 15px;
+    }
 
-#section-1 p {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 0.8rem;
-    padding-top: 40px;
-}
+    #sign-buttons button {
+        height: 53px;
+        border: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        align-items: center;
+    }
 
-#company-logos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:2fr 1fr 1fr 1fr ;
-}
-#company-logos img {
-    /* width: 15%; */
+    #sign-button-email  {
+        
+        color: #540B51;
+    }
+
+    #sign-button-google {
+        display: flex;
+        background-color: #4285F4;
+        color: white;
+        padding: 0px 25px 0px 6px;
+    }
+
+    #sign-button-google img {
+        display: flex;
+        height: 1.8rem;
+        background-color: white;
+        padding: 7px;
+        border-radius: 5px;
+    }
+    #sign-button-google span {
+        flex-grow: 1;
+
+    }
+    #hero-product-container {
+        display: flex;
+        width: 100%;
+    }
+
+    #hero-product-img {
+        padding-top: 15px;
+        width: 150%;
+        object-fit: cover;
+    }
+
+    /* Seccion 1*/
+
+    #section-1 {
+        background-color: #F3EAE2;
+        padding: 0;
+    }
+
+    #section-1 p {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.8rem;
+        padding-top: 40px;
+    }
+
+    #company-logos {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 10px;
+        padding: 5px 20px 10px 20px;
+    }
+
+    #company-logos img{
+        justify-self: stretch;
+        align-self: center;
+    }
+
+    #New-York-logo {
+        grid-column: 1/3;
+    }
+    #Spotify-logo {
+        grid-column: 3/5;
+    }
+
+
+    
 }
