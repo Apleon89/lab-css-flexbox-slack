@@ -406,12 +406,36 @@ a {
     .footer-second-list {
         list-style: none;
         font-weight: bold;
-        padding: 30px 15px;
+        padding: 30px 15px 510x 15px;
     }
     .footer-second-list li {
         padding: 15px 10px;
     }
     .footer-second-list .region::before {
         content: "◍ ";
+    }
+    .footer-second-list .download {
+        color: #4285F4;
+    }
+    .footer-second-list .download::before {
+        content: "☁ ";
+        color: #4285F4;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .footer-logo-list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0 25px;
+    }
+    small {
+        color: rgb(153, 153, 153);
+        text-align: center;
+        padding: 25px 25px;
+        display: block;
     }
 }
