@@ -11,10 +11,14 @@ footer links grey: #454245
 
 /* Cabecera */
 
+
 body {
     background-color: #540B51;
-    /* max-width: 768px; */
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    background-color: #F3EAE2;
 }
 img {
     max-width: 100%;
@@ -37,17 +41,10 @@ a {
     }
 
     #logo-container ul {
-        
-        height: 1px;
-        width: 1px;
+        display: none;
         list-style: none;
     }
 
-    #logo-container ul li a {
-        text-decoration: none;
-        font-size: 1px;
-        color: #540B51;
-    }
 
     #logo{
     width: 35%; 
@@ -75,7 +72,8 @@ a {
 
     #header-container h1 {
         color: white;
-        font-size: 2.6rem;
+        font-size: 2.4rem;
+        padding: 0 15px;
     }
 
     #header-container p span {
@@ -117,7 +115,6 @@ a {
     }
 
     #sign-button-google img {
-        display: flex;
         height: 1.8rem;
         background-color: white;
         padding: 7px;
@@ -128,7 +125,6 @@ a {
 
     }
     #hero-product-container {
-        display: flex;
         width: 100%;
     }
 
@@ -154,14 +150,16 @@ a {
     }
 
     #company-logos {
+        max-width: 100%;
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: 2fr 1fr 1fr 1fr;
         gap: 10px;
-        padding: 5px 20px 10px 20px;
+        padding: 5px 20px 35px 20px;
     }
 
     #company-logos img{
+        max-width: 100%;
         justify-self: stretch;
         align-self: center;
     }
@@ -173,6 +171,206 @@ a {
         grid-column: 3/5;
     }
 
+    /* Section 2 */
 
+    #connectedness-mobile-img{
+    }
+    .bring-your-team {
+        
+        background-color: #F3EAE2;
+
+    }
+
+    .bring-your-team,
+    .div-section-3-container{
+        margin: 0;
+        padding: 20px 0 0 10px;
+
+    } 
+
+    .bring-your-team h2,
+    .div-section-3-container h2 {
+        padding: 0 20px 0 0;
+        font-size: 1.8rem;
+        margin-bottom: 16px;
+    }
+
+    .bring-your-team p,
+    .div-section-3-container p {
+        margin-top: 0;
+        padding: 0 15px 0 0;
+        font-size: 1rem;
+        line-height: 26px;
+        font-weight: bold;
+    }
+
+    .bring-your-team a,
+    .div-section-3-container a {
+        text-decoration: none;
+        color: #4285F4;
+        font-size: 1.1rem;
+    }
+
+    .bring-your-team a::after,
+    .div-section-3-container a::after{
+        content: "→";
+    }
+
+    /* Section 3 */
+
+    .div-section-3-container {
+        background-color: #F3EAE2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-3-div-img {
+        order: -1;
+        padding-top: 60px;
+    }
+
+    /* Section 4 */
+
+
+    .section-4-container {
+        padding-top: 100px;
+        background-color: #F3EAE2;
+        padding-bottom: 13px;
+    }
+
+    .section-4-text h2 {
+        padding: 2px 0 8px 10px;
+        font-size: 1.8rem;
+        margin-bottom: 16px;
+    }
+
+    .section-4-text p {
+        margin-top: 0;
+        padding: 0 10px 0 10px;
+        font-size: 1rem;
+        line-height: 26px;
+        font-weight: bold;
+    }
+
+    .section-4-text a {
+        padding-left: 10px;
+        text-decoration: none;
+        color: #4285F4;
+        font-size: 1.1rem;
+    }
+    .section-4-text a::after {
+        content: "→";
+    }
+
+    .section-5-container {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .section-5-container h3 {
+        padding: 65px 30px 0 30px;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+     .section-5-container p {
+        text-align: center;
+        line-height: 26px;
+        padding: 0 5px 0 5px;
+        font-size: 1.1rem;
+     }
+
+     #section-5-button {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 13px;
+        padding: 0 15px;
+        
+    } 
+    #section-5-button button {
+        height: 53px;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        align-items: center;
+    }
+    #section-5-button-1 {
+        background-color: #540B51;
+        color: white;
+        border: none;
+    }
+    #section-5-button-2 {
+        border: 2px solid #540B51;
+        color: #540B51;
+        background-color: white;
+    }
+    .section-5-container ul {
+        list-style: none;
+        padding: 50px 0 0 0;
+    }
+    .section-5-container ul li p span {
+        font-size: 3rem;
+        color: #540B51;
+        font-weight: bolder;
+    }
+    #list-text-section-5 {
+        padding: 0 110px 20px 110px;
+        font-weight: bold;
+        font-size: 0.9rem;
+        line-height: 20px;
+        
+    }
+    .section-5-container ul::after {
+        content: "* Weighted average. Based on 2.707 survey responses from weekly Slack users in the U.S., UK, Australia and Canada with a + 2% margin of error at 96% CI (August 2020).";
+        color: rgb(153, 153, 153);
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 0 20px 30px 20px;
+        display: block;
+    }
+
+    /* Section 6 */
+
+    .section-6-container {
+        background-color: #540B51;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        padding: 0 15px 55px 15px;
+    }
+    .section-6-container h3 {
+        margin: 0;
+        padding: 45px 30px 35px 30px;
+        font-size: 1.8rem;
+        text-align: center;
+        color: white;
+    }
     
+    .secc-6-btn {
+        height: 53px;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        align-items: center;
+        margin: 0;
+    }
+    .section-6-button1 {
+        background-color: white;
+        color: #540B51;
+        border: none;
+    }
+    .section-6-button2 {
+        background-color: #540B51;
+        border: 1px solid white;
+        color: white;
+    }
+
+    /* Footer */
+
+    footer {
+        background-color: white;
+    }
 }
